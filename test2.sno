@@ -1,0 +1,4 @@
+   OUTPUT = "Your name? " 
+   NAME = INPUT
+   OUTPUT = "Hello " NAME
+END
