@@ -1,2 +1,3 @@
  OUTPUT = 'Hello World'
+ OUTPUT = "quoted string"
 END
