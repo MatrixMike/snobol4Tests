@@ -1,0 +1,9 @@
+* derived from test/  
+* splitting the output streams
+* Wed 7 March 2018
+
+	OUTPUT = &LCASE
+	OUTPUT = &DIGITS
+    OUTPUT = &UCASE
+	TERMINAL = &DIGITS
+END
