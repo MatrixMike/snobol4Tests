@@ -1,0 +1,11 @@
+*  OUTPUT = "Your name? " 
+*   NAME = INPUT
+*   OUTPUT = "Hello " NAME
+   OUTPUT = HOST()
+   x = 3
+   y = 4
+   OUTPUT = ORD("cat")
+   OUTPUT = x
+   OUTPUT = DATE()
+*   OUTPUT = SQRT(x*x + y*y)
+END
