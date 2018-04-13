@@ -3,9 +3,14 @@
    LETTERORSLASH = "/" LETTER
    OUTPUT = "part1"
    LINE = INPUT
-   LINE SPAN(LETTER) . PROTO "://" SPAN(LETTERORDOT) . HOST "/" SPAN(LETTERORSLASH) . RES
+   LINE = SPAN(LETTER) . PROTO "://" SPAN(LETTERORDOT) . HOST "/" SPAN(LETTERORSLASH) . RES
    OUTPUT = LETTERORSLASH
    OUTPUT = PROTO
    OUTPUT = HOST 
    OUTPUT = RES
 END
+* usage tips
+* HTTP://electroteach.com/
+* see http://www.snobol4.org/docs/burks/tutorial/ch4.htm
+
+

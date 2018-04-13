@@ -1,0 +1,5 @@
+    S = "ABCDA"
+    S LEN(3) . OUTPUT   
+    S LEN(2) . OUTPUT 'A' 
+*    "SAMPLE LINE" WORD . OUTPUT
+end

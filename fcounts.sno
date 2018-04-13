@@ -1,0 +1,14 @@
+*Label   Statement body                                 :GOTO
+* &TRIM  = 1
+* &DUMP = 1
+*          INPUT('READLINE', 1, , 'TEXT.IN')    :S(OK)
+*           OUTPUT = 'Could not find file'       :(END)
+*    OK       . . .
+      CHARS  = 0
+NEXTL CHARS  = CHARS + SIZE(INPUT)    :F(DONE)
+      LINES  = LINES + 1              :(NEXTL)
+DONE  OUTPUT = CHARS ' characters'
+      OUTPUT = +LINES ' lines read'
+END
+
+*  snobol4 fcounts.sno < text.in
