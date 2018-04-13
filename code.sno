@@ -1,5 +1,11 @@
     S = "ABCDA"
     S LEN(3) . OUTPUT   
     S LEN(2) . OUTPUT 'A' 
-*    "SAMPLE LINE" WORD . OUTPUT
+    LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ'-"
+* now set up some patterns
+    WORD = SPAN(LETTERS)
+    GAP = BREAK(LETTERS)
+    "SAMPLE LINE" WORD . OUTPUT
+    'PLUS TEN DEGREES ' ' ' WORD . OUTPUT
+* for debugging     &DUMP = 1
 end

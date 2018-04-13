@@ -1,0 +1,8 @@
+        DEFINE('SHIFT(S,N)FRONT,REST')
+        SHIFT_PAT = LEN(*N) . FRONT REM . REST :(SHIFT_END)
+SHIFT   S SHIFT_PAT
+        SHIFT = REST FRONT                   :(RETURN)
+        
+SHIFT_END
+        OUTPUT = SHIFT("test-string",3) 
+end

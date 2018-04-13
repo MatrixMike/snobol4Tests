@@ -2,7 +2,12 @@
    LETTERORDOT = "." LETTER
    LETTERORSLASH = "/" LETTER
    OUTPUT = "part1"
-   LINE = INPUT
+   MYFILENAME = 'urlTestInput.in'
+   INPUT('READLINE', 1, , MYFILENAME)    :S(OK)
+   OUTPUT = 'Could not find file'       :(END)
+OK OUTPUT = "File <"  MYFILENAME "> was found OK"
+   LINE = TRIM(READLINE)                :F(END.OF.FILE)
+*   LINE = INPUT
    LINE = SPAN(LETTER) . PROTO "://" SPAN(LETTERORDOT) . HOST "/" SPAN(LETTERORSLASH) . RES
    OUTPUT = LETTERORSLASH
    OUTPUT = PROTO
