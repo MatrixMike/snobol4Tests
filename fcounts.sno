@@ -1,6 +1,7 @@
 *Label   Statement body                                 :GOTO
 * &TRIM  = 1
 * &DUMP = 1
+*  INPUT('variable', unit, length, 'file')
 *          INPUT('READLINE', 1, , 'TEXT.IN')    :S(OK)
 *           OUTPUT = 'Could not find file'       :(END)
 *    OK       . . .
