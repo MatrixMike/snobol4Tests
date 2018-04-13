@@ -10,6 +10,7 @@ NEXTL CHARS  = CHARS + SIZE(INPUT)    :F(DONE)
       LINES  = LINES + 1              :(NEXTL)
 DONE  OUTPUT = CHARS ' characters'
       OUTPUT = +LINES ' lines read'
+      &DUMP = 1
 END
 
 *  snobol4 fcounts.sno < text.in

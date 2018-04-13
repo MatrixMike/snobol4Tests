@@ -2,7 +2,7 @@
     MYFILENAME = 'text.in'
     INPUT('READLINE', 1, , MYFILENAME)    :S(OK)
     OUTPUT = 'Could not find file'       :(END)
-OK  OUTPUT = "File was found OK"
+OK  OUTPUT = "File <"  MYFILENAME "> was found OK"
     LINE = TRIM(READLINE)                :F(END.OF.FILE)
     OUTPUT LINE  
     &DUMP = 1
