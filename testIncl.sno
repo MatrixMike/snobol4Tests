@@ -1,0 +1,4 @@
+-INCLUDE "initialv.sno"
+	OUTPUT = parallel
+	OUTPUT = serial
+end

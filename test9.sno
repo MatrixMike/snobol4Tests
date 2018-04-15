@@ -1,0 +1,12 @@
+*-INCLUDE host.sno
+* snobol4 -u test9.sno one two three four
+	a = 12
+	notefile = "notes.txt"
+	OUTPUT host()
+*	host(2,a = a + 1)
+	OUTPUT = host()	
+	OUTPUT = host(0)	
+	OUTPUT = host(1)
+	&DUMP = 1
+end
+	

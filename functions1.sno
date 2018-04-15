@@ -5,4 +5,5 @@ SHIFT   S SHIFT_PAT
         
 SHIFT_END
         OUTPUT = SHIFT("test-string",3) 
+        &DUMP = 1
 end
