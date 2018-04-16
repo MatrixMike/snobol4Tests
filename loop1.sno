@@ -1,0 +1,8 @@
+* sum all values of 'a' between 1 and 35
+* 17.04.2018 02:26:57
+		upper = 9
+		a = 0
+loop    
+		output = lt(a,upper) output + (a = a + 1) :s(loop)
+* treat <lt(a,upper)>  as a sort of predicate
+end
