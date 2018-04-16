@@ -1,8 +1,12 @@
-* sum all values of 'a' between 1 and 35
+* sum all values of 'a' between 1 and upper
 * 17.04.2018 02:26:57
-		upper = 9
+		upper = 6
 		a = 0
-loop    
-		output = lt(a,upper) output + (a = a + 1) :s(loop)
+loop    sq = a * a
+		output = lt(a,upper) output + (a = a + 1) + sq :s(loop)
 * treat <lt(a,upper)>  as a sort of predicate
+
+		&DUMP = 1
 end
+* unexpected effect : wanted to create extra column with the square 
+* of the sum
