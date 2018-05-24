@@ -7,7 +7,7 @@ rekindling an interest in Snobol4
 
 download the archive from above and extract to home folder
 then ./configure
-then make
+then make  {or even sudo make install}
 
 Currently the timing.sno does not run smoothly - may need input from user...
 
