@@ -74,9 +74,9 @@ EPREC
 ****************************************************************
 * parse snobol's messages
 
-VLOP	LINE = INPUT					:F(NOVERS)
-	LINE "The Macro Implementation of SNOBOL4" BREAKX("V") "Version "
-+		REM . VERS				:F(VLOP)
+*mjh VLOP	LINE = INPUT					:F(NOVERS)
+*mjh 	LINE "The Macro Implementation of SNOBOL4" BREAKX("V") "Version "
+*mjh +		REM . VERS				:F(VLOP)
 
 	OUTPUT = 'Version:' TAB TAB VERS		:(CLOP)
 
@@ -140,8 +140,8 @@ NOET	SNOBOL = (COMP + EXEC) / SNODIV
 
 **************** get snobols's average ms/stmt
 
-ALOP	LINE = INPUT					:F(NOSTAT)
-	LINE WS NUM . AVG WS 'ns. Average'		:F(ALOP)
+*mjh ALOP	LINE = INPUT					:F(NOSTAT)
+*mjh 	LINE WS NUM . AVG WS 'ns. Average'		:F(ALOP)
 *	OUTPUT = '>>' LINE
 
 * get usec/stmt (as calculated by snobol)
