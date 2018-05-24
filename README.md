@@ -10,4 +10,5 @@ then ./configure
 then make  {or even sudo make install}
 
 Currently the timing.sno does not run smoothly - may need input from user...
+run ./timing from the compiler folder : as opposed to trying snobol4 timing.sno   
 
