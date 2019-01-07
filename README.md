@@ -3,7 +3,7 @@ Some working samples of Snobol4 (First experience at Newcastle University)
 #
 rekindling an interest in Snobol4 
 
-# http://www.snobol4.org/csnobol4/curr/
+# <a href="http://www.snobol4.org/csnobol4/curr/">look here</a>
 
 download the archive from above and extract to home folder
 then ./configure
